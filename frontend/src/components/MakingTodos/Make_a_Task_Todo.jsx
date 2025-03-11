@@ -71,7 +71,7 @@ const handleCreateTodo = async ()=>{
     repeat
   }
   try{
-    const response = await axios.post("http://localhost:8000/api/todo/make-A-Task-Todo" , data )
+    const response = await axios.post("https://fs-first-projectserverapi.vercel.app/api/todo/make-A-Task-Todo" , data )
     console.log(response);
     setTodoValue("")
     setDate("")

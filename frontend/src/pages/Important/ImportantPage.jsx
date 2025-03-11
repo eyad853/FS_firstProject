@@ -25,7 +25,7 @@ const toggleLeftSideBar=()=>{
 
 const handleGetTodos = async()=>{
   try{
-      const response = await axios.get("http://localhost:8000/api/todo/get-All-Todos")
+      const response = await axios.get("https://fs-first-projectserverapi.vercel.app//api/todo/get-All-Todos")
       setApiResponse(response.data.data)
   }catch(error){
       console.log(error);

@@ -29,7 +29,7 @@ const Todos = ({
 
     const handleGetTodos = async()=>{
         try{
-            const response = await axios.get("http://localhost:8000/api/todo/get-All-Todos")
+            const response = await axios.get("https://fs-first-projectserverapi.vercel.app/api/todo/get-All-Todos")
             setApiResponse(response.data.data)
         }catch(error){
             console.log(error);
@@ -38,7 +38,7 @@ const Todos = ({
 
     const handleDeleteTodos = async (id)=>{
         try{
-            await axios.delete(`http://localhost:8000/api/todo/delete-Todo/${id}`)
+            await axios.delete(`https://fs-first-projectserverapi.vercel.app/api/todo/delete-Todo/${id}`)
             handleGetTodos()
         }catch(error){
             console.log(error);
@@ -55,7 +55,7 @@ const Todos = ({
 
     const handleUpdateTodo = async (id)=>{
         try{
-            await axios.put(`http://localhost:8000/api/todo/update-A-Todo/${id}` , {
+            await axios.put(`https://fs-first-projectserverapi.vercel.app/api/todo/update-A-Todo/${id}` , {
                 todoValue:editValue
             })
 

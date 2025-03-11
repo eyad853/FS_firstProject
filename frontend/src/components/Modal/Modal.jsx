@@ -87,7 +87,7 @@ const UpdateModal = ({
         setIsModalOpen(false)
       }
       try{
-       await axios.put(`http://localhost:8000/api/todo/update-A-Todo/${selectedTodoId}` , data)
+       await axios.put(`https://fs-first-projectserverapi.vercel.app/api/todo/update-A-Todo/${selectedTodoId}` , data)
        handleGetTodos()
        setIsModalOpen(false)
       }catch(error){
