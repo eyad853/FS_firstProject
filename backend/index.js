@@ -20,6 +20,7 @@ const connect = async ()=>{
 
 app.use(cors({
     origin:"https://fs-first-projectfrontend.vercel.app",
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials:true,
 }))
 
