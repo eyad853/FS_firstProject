@@ -19,7 +19,8 @@ const connect = async ()=>{
 
 
 app.use(cors({
-    origin:"https://fs-first-projectfrontend.vercel.app"
+    origin:"https://fs-first-projectfrontend.vercel.app",
+    credentials:true,
 }))
 
 app.use(express.json())
