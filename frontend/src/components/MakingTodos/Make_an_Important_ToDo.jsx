@@ -3,7 +3,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import React, { useState , useRef , useEffect} from 'react'
 import { CgCalendarDates } from "react-icons/cg";
 import DateList from "../pops/date/Date";
-import Reminder from "../pops/reminder/reminder";
+import Reminder from "../pops/reminder/Reminder";
 import Repeat from "../pops/repeat/Repeat";
 import axios from "axios"
 
